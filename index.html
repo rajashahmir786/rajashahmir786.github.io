@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practise</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    
+    <header>
+        <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/align-justify-512.png">
+        <h1>SHAHMIR FAISAL</h1>
+    </header>
+    
+    <nav>
+       <!-- <img src="https://pngimage.net/wp-content/uploads/2018/06/multiply-png-8.png" > -->
+        <ul>
+            <img src="https://pngimage.net/wp-content/uploads/2018/06/multiply-png-8.png" >
+            <li>HOME</li>
+            <li>COURSES</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+        </nav>
+
+        <style type="text/css">
+            body{
+    padding:0;
+    margin:0;
+}
+header {
+    background-color:dodgerblue;
+    position:;
+    width:100%;
+    text-align:center;
+    z-index:2;
+    padding:5px 0px;
+}
+header img {
+    width:30px;
+    height:30px;
+    position:absolute;
+    left:10px;
+    top:20px;
+    cursor:pointer;
+}
+
+header h1 {
+    color:white;
+    font-size:23px;
+    text-shadow:1px 1px 1px black;
+}
+
+nav {
+    
+}
+ul img {
+    cursor:pointer;
+    width:20px;
+    height:20px;
+    position:relative;
+    left:88%;
+    top:5px;
+    display:none;
+}
+ul {
+    list-style-type:none;
+    height:100vh;
+    background-color:rgba(0,0,0,0.8);
+    color:white;
+    padding:0;
+    margin:0;
+    width:0;
+    position:;
+    display:;
+}
+ul li {
+    padding:;
+    width:;
+}
+ul li:hover {
+    background-color:dodgerblue;
+}
+        </style>
+
+
+        <script type="text/javascript">
+            $(function() {
+      
+      $("header img").click(function(){
+          $("ul").animate({width: "50%"},500);
+          $("li").animate({padding:"20px 25px"},500);
+          $("ul img").css("display","inline");
+           var win_width = $(window).width();
+        if(win_width >= 700) {
+        $("ul").animate({width: "25%"},500);
+          }
+      });
+      $("ul img").click(function() {
+         $("ul").animate({width: "0"},500);
+         $("li").animate({padding: "0"},500);
+         $("ul img").css("display","none");
+      });
+});
+        </script>
+        
+    </body>
+</html>
